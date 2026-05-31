@@ -1,0 +1,53 @@
+name: CI — Copilot Analyst
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend:
+    name: Backend Tests (Python 3.13)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install --upgrade pip setuptools wheel
+          pip install torch --index-url https://download.pytorch.org/whl/cpu --only-binary=:all:
+          pip install -r requirements.txt --only-binary=pyarrow,faiss-cpu
+
+      - name: Run tests
+        env:
+          LLM_PROVIDER: gemini
+          FILE_SOURCE: local
+          KNOWLEDGE_PATH: ../sample-data
+          RAG_STORE_PATH: ./index
+          RAG_ENABLED: "true"
+          EMBEDDING_PROVIDER: local
+          EMBEDDING_MODEL: all-MiniLM-L6-v2
+          STREAMING_ENABLED: "true"
+          LANGSMITH_TRACING: "false"
+          POLARIS_ENABLED: "false"
+          LOG_LEVEL: WARNING
+        run: cd backend && pytest tests/ -v --tb=short
+
+  frontend:
+    name: Frontend Build (Node 20)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build
+        run: cd frontend && npm install && npm run build

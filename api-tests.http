@@ -1,0 +1,154 @@
+### ─── Health ────────────────────────────────────────────────
+GET http://localhost:8000/api/health
+
+###
+### Root info (shows resolved paths)
+GET http://localhost:8000/
+
+###
+### ─── Files ──────────────────────────────────────────────────
+### List raw files on disk
+GET http://localhost:8000/api/files
+
+###
+### List indexed files (RAG ready)
+GET http://localhost:8000/api/files/indexed
+
+###
+### Refresh index (re-scan all files)
+POST http://localhost:8000/api/files/refresh
+
+###
+### ─── CDH Catalog ────────────────────────────────────────────
+### CDH data sources detected
+GET http://localhost:8000/api/cdh/sources
+
+###
+### Knowledge articles indexed
+GET http://localhost:8000/api/cdh/knowledge-articles
+
+###
+### Document templates available
+GET http://localhost:8000/api/cdh/templates
+
+###
+### ─── Chat — Generic ─────────────────────────────────────────
+### Basic file summary
+POST http://localhost:8000/api/chat
+Content-Type: application/json
+
+{
+  "message": "What files are indexed and what do they contain?",
+  "stream": false
+}
+
+###
+### Data analysis query
+POST http://localhost:8000/api/chat
+Content-Type: application/json
+
+{
+  "message": "Which products have the highest profit margin?",
+  "stream": false
+}
+
+###
+### ─── Chat — CDH Knowledge Articles ─────────────────────────
+### Arbitration formula
+POST http://localhost:8000/api/cdh/chat
+Content-Type: application/json
+
+{
+  "message": "What is the arbitration priority formula in Pega CDH and how does each component work?",
+  "stream": false
+}
+
+###
+### ADM models
+POST http://localhost:8000/api/cdh/chat
+Content-Type: application/json
+
+{
+  "message": "What AUC score means an ADM model is failing and what should I do?",
+  "stream": false
+}
+
+###
+### Impact Analyzer
+POST http://localhost:8000/api/cdh/chat
+Content-Type: application/json
+
+{
+  "message": "How does Impact Analyzer work and what scenarios can it simulate?",
+  "stream": false
+}
+
+###
+### Actuals Dataset
+POST http://localhost:8000/api/cdh/chat
+Content-Type: application/json
+
+{
+  "message": "How is the Actuals Dataset constructed and how do I calculate lift?",
+  "stream": false
+}
+
+###
+### Value Finder
+POST http://localhost:8000/api/cdh/chat
+Content-Type: application/json
+
+{
+  "message": "What are the Value Finder quadrants and how do I identify underserved customers?",
+  "stream": false
+}
+
+###
+### Knowledge articles only (kb_only=true)
+POST http://localhost:8000/api/cdh/chat
+Content-Type: application/json
+
+{
+  "message": "What are the Eligibility and Suitability rules in the Engagement Policy?",
+  "stream": false,
+  "kb_only": true
+}
+
+###
+### ─── Document Generation ────────────────────────────────────
+### ADM health report
+POST http://localhost:8000/api/cdh/generate-document
+Content-Type: application/json
+
+{
+  "question": "Assess ADM model health and identify models needing attention",
+  "doc_type": "adm_health_report"
+}
+
+###
+### NBA performance report
+POST http://localhost:8000/api/cdh/generate-document
+Content-Type: application/json
+
+{
+  "question": "Analyse NBA strategy performance across all channels and products",
+  "doc_type": "nba_performance_report"
+}
+
+###
+### KB synthesis report
+POST http://localhost:8000/api/cdh/generate-document
+Content-Type: application/json
+
+{
+  "question": "Summarise all CDH arbitration and ADM best practices",
+  "doc_type": "kb_synthesis_report"
+}
+
+###
+### ─── Observability ──────────────────────────────────────────
+GET http://localhost:8000/api/observability/status
+
+###
+### Polaris status
+GET http://localhost:8000/api/polaris/status

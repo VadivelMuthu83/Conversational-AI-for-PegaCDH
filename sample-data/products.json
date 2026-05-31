@@ -1,0 +1,74 @@
+[
+  {
+    "sku": "SKU-100",
+    "name": "Widget A",
+    "category": "Hardware",
+    "price": 50,
+    "cost": 30,
+    "stock": 500,
+    "rating": 3.5
+  },
+  {
+    "sku": "SKU-101",
+    "name": "Widget B",
+    "category": "Software",
+    "price": 60,
+    "cost": 36,
+    "stock": 480,
+    "rating": 3.6
+  },
+  {
+    "sku": "SKU-102",
+    "name": "Widget C",
+    "category": "Service",
+    "price": 70,
+    "cost": 42,
+    "stock": 460,
+    "rating": 3.7
+  },
+  {
+    "sku": "SKU-103",
+    "name": "Widget D",
+    "category": "Hardware",
+    "price": 80,
+    "cost": 48,
+    "stock": 440,
+    "rating": 3.8
+  },
+  {
+    "sku": "SKU-104",
+    "name": "Widget E",
+    "category": "Software",
+    "price": 90,
+    "cost": 54,
+    "stock": 420,
+    "rating": 3.9
+  },
+  {
+    "sku": "SKU-105",
+    "name": "Widget F",
+    "category": "Service",
+    "price": 100,
+    "cost": 60,
+    "stock": 400,
+    "rating": 4.0
+  },
+  {
+    "sku": "SKU-106",
+    "name": "Widget G",
+    "category": "Hardware",
+    "price": 110,
+    "cost": 66,
+    "stock": 380,
+    "rating": 4.1
+  },
+  {
+    "sku": "SKU-107",
+    "name": "Widget H",
+    "category": "Software",
+    "price": 120,
+    "cost": 72,
+    "stock": 360,
+    "rating": 4.2
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Customer 1",
+    "tier": "Silver",
+    "city": "Los Angeles",
+    "orders": 13,
+    "total_spend": 1250,
+    "churn_risk": 0.15
+  },
+  {
+    "id": 2,
+    "name": "Customer 2",
+    "tier": "Gold",
+    "city": "Chicago",
+    "orders": 16,
+    "total_spend": 1500,
+    "churn_risk": 0.2
+  },
+  {
+    "id": 3,
+    "name": "Customer 3",
+    "tier": "Platinum",
+    "city": "Houston",
+    "orders": 19,
+    "total_spend": 1750,
+    "churn_risk": 0.25
+  },
+  {
+    "id": 4,
+    "name": "Customer 4",
+    "tier": "Bronze",
+    "city": "Phoenix",
+    "orders": 22,
+    "total_spend": 2000,
+    "churn_risk": 0.3
+  },
+  {
+    "id": 5,
+    "name": "Customer 5",
+    "tier": "Silver",
+    "city": "New York",
+    "orders": 25,
+    "total_spend": 2250,
+    "churn_risk": 0.35
+  },
+  {
+    "id": 6,
+    "name": "Customer 6",
+    "tier": "Gold",
+    "city": "Los Angeles",
+    "orders": 28,
+    "total_spend": 2500,
+    "churn_risk": 0.4
+  },
+  {
+    "id": 7,
+    "name": "Customer 7",
+    "tier": "Platinum",
+    "city": "Chicago",
+    "orders": 31,
+    "total_spend": 2750,
+    "churn_risk": 0.45
+  },
+  {
+    "id": 8,
+    "name": "Customer 8",
+    "tier": "Bronze",
+    "city": "Houston",
+    "orders": 34,
+    "total_spend": 3000,
+    "churn_risk": 0.5
+  },
+  {
+    "id": 9,
+    "name": "Customer 9",
+    "tier": "Silver",
+    "city": "Phoenix",
+    "orders": 37,
+    "total_spend": 3250,
+    "churn_risk": 0.55
+  },
+  {
+    "id": 10,
+    "name": "Customer 10",
+    "tier": "Gold",
+    "city": "New York",
+    "orders": 40,
+    "total_spend": 3500,
+    "churn_risk": 0.6
+  },
+  {
+    "id": 11,
+    "name": "Customer 11",
+    "tier": "Platinum",
+    "city": "Los Angeles",
+    "orders": 43,
+    "total_spend": 3750,
+    "churn_risk": 0.65
+  },
+  {
+    "id": 12,
+    "name": "Customer 12",
+    "tier": "Bronze",
+    "city": "Chicago",
+    "orders": 46,
+    "total_spend": 4000,
+    "churn_risk": 0.7
+  },
+  {
+    "id": 13,
+    "name": "Customer 13",
+    "tier": "Silver",
+    "city": "Houston",
+    "orders": 49,
+    "total_spend": 4250,
+    "churn_risk": 0.75
+  },
+  {
+    "id": 14,
+    "name": "Customer 14",
+    "tier": "Gold",
+    "city": "Phoenix",
+    "orders": 52,
+    "total_spend": 4500,
+    "churn_risk": 0.8
+  },
+  {
+    "id": 15,
+    "name": "Customer 15",
+    "tier": "Platinum",
+    "city": "New York",
+    "orders": 55,
+    "total_spend": 4750,
+    "churn_risk": 0.85
+  },
+  {
+    "id": 16,
+    "name": "Customer 16",
+    "tier": "Bronze",
+    "city": "Los Angeles",
+    "orders": 58,
+    "total_spend": 5000,
+    "churn_risk": 0.9
+  },
+  {
+    "id": 17,
+    "name": "Customer 17",
+    "tier": "Silver",
+    "city": "Chicago",
+    "orders": 61,
+    "total_spend": 5250,
+    "churn_risk": 0.95
+  },
+  {
+    "id": 18,
+    "name": "Customer 18",
+    "tier": "Gold",
+    "city": "Houston",
+    "orders": 64,
+    "total_spend": 5500,
+    "churn_risk": 1.0
+  },
+  {
+    "id": 19,
+    "name": "Customer 19",
+    "tier": "Platinum",
+    "city": "Phoenix",
+    "orders": 67,
+    "total_spend": 5750,
+    "churn_risk": 1.05
+  },
+  {
+    "id": 20,
+    "name": "Customer 20",
+    "tier": "Bronze",
+    "city": "New York",
+    "orders": 70,
+    "total_spend": 6000,
+    "churn_risk": 1.1
+  }
+]
